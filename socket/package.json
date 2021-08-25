@@ -1,0 +1,11 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "Push notification",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "Okandeji",
+  "license": "ISC"
+}
