@@ -7,5 +7,9 @@
     "start": "nodemon index.js"
   },
   "author": "Okandeji",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.12",
+    "socket.io": "^4.2.0"
+  }
 }

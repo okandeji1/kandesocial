@@ -2,6 +2,18 @@ const User = require("../models/User");
 const router = require("express").Router();
 const bcrypt = require("bcrypt");
 
+// Get all users
+router.get("/get-users", async (req, res) => {
+  const userId = req.query.userId;
+  const username = req.query.username;
+  try {
+    const users =  await User.find({});
+    res.status(200).json(users);
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
 //update user
 router.put("/:id", async (req, res) => {
   if (req.body.userId === req.params.id || req.body.isAdmin) {
